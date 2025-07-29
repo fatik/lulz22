@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Daalá</title>
+   <style>
+       :root {
+           --bg-color: #fff;
+           --text-color: #333;
+           --accent-color: #666;
+       }
+       
+       @media (prefers-color-scheme: dark) {
+           :root {
+               --bg-color: #1a1a1a;
+               --text-color: #e5e5e5;
+               --accent-color: #a0a0a0;
+           }
+       }
+       
+       [data-theme="dark"] {
+           --bg-color: #1a1a1a;
+           --text-color: #e5e5e5;
+           --accent-color: #a0a0a0;
+       }
+       
+       [data-theme="light"] {
+           --bg-color: #fff;
+           --text-color: #333;
+           --accent-color: #666;
+       }
+       
+       * { transition: background-color 0.3s ease, color 0.3s ease; }
+       
+       body {
+           font-family: -apple-system, system-ui, sans-serif;
+           line-height: 1.6;
+           max-width: 650px;
+           margin: 40px auto;
+           padding: 0 10px;
+           color: var(--text-color);
+           background: var(--bg-color);
+       }
+       
+       a { color: var(--text-color); }
+       
+       img {
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin: 20px auto;
+           border-radius: 8px;
+           loading: lazy;
+       }
+       
+       .theme-toggle {
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           background: var(--bg-color);
+           border: 1px solid var(--accent-color);
+           color: var(--text-color);
+           padding: 8px 12px;
+           border-radius: 6px;
+           cursor: pointer;
+           font-size: 14px;
+       }
+       
+       .theme-toggle:hover {
+           opacity: 0.8;
+       }
+       
+       pre {
+           background: var(--accent-color);
+           color: var(--bg-color);
+           padding: 16px;
+           border-radius: 6px;
+           overflow-x: auto;
+       }
+       
+       code {
+           background: var(--accent-color);
+           color: var(--bg-color);
+           padding: 2px 6px;
+           border-radius: 3px;
+           font-size: 0.9em;
+       }
+       
+       blockquote {
+           border-left: 3px solid var(--accent-color);
+           margin: 0;
+           padding-left: 20px;
+           font-style: italic;
+           color: var(--accent-color);
+       }
+   </style>
+</head>
+<body>
+   <button class="theme-toggle" onclick="toggleTheme()">◑</button>
+   <a href="./">← Back</a>
+   <h1>Daalá</h1>
+   <p>I thought having a degree in systems engineering and reading some books on systems thinking will equip my mind to be a better designer, and eventually a founder. I don&#39;t know about design and career and all that AI stuff, but I can&#39;t just un-notice things those things that seemingly are random and I quiet get obsessed with it to the point it start stinging my brain.</p>
+<p>One of my recent obsession is with Revo or daala. And how its related to Simulation and Simulacra. Big words, but stick with me I will explain.</p>
+<p>So the Revo is a truck. By design and purpose its a truck. By function its a truck too. The question is at what point the symbolism becomes so overpowering that a truck doesn&#39;t remain a truck anymore. How much culture and shared mental model can influence the reality to the point that a truck doesn&#39;t remain a truck anymore.</p>
+<p>Those kinds of truck were initially used by people of influence who needed extra protection, be it army personelle or politicians. The choice of truck was by design, it can house the guards while having them a near 360 view of the surroundings. This became a preventive system by itself, not only the guards can stop the attack as it happen, they are also preventing it because the outsiders have a clear view of them too which indicated to the attacker that the target is not vulnerable.</p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/0a1c921a-1c41-431a-a716-ffd1e828752a/4160d32f-faa4-4c1e-83d6-22ec83c4fbac/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466R5FBCJAT%2F20250729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250729T123201Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHwaCXVzLXdlc3QtMiJIMEYCIQC5v23lVgp9RdIXzvCsoUn1BJlwEFt8Z1ioCDhalT68ugIhAMsJ1dlAQMuuzPtf8od4hdfask%2FShnA3UW67eVLDAEKZKogECKX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igy%2Fgk%2FOf0vFeQH76u4q3AOKzP4zYsuQLaKkx3j39yI9YGWkzoARiN6ZChhJsQlTXlJpTICPEkvAKQ2o3xs9BgbOQZve30qWDFPTuqckDdjy8BIC77hKfOIaOKH8wpxHvCrSMBl4uTBGXL3amUhxA0bqBtkhZEkrvMrp%2Fm5QFfU5O797or%2Bp1sxKBS2dZTV6%2BVNsPLrgpp8VHRCUWDg9PfV0JQNEgT0m%2FZ4YO75ojTLXZ%2FF40b6Sq%2F74R8zom98aBvqHJ%2Bh0px%2B%2BOpSgA4zJ2H8DsY0rHfyiuvNq14jpUKsUMkic%2FYJ3VpTx1foAEltb690RmWuIftS7q4753WLWYL%2BCVIwxyr3QT6FbnAkEqngHiB15CifrlAFobtivstCD54OrneyFJGwU%2F%2B4FWlRqr%2FRrk9yf1dCvQzwAtZm4%2FAG9V4D2Q2c2gA5mFS3GF41tIyxM%2F%2Fd8mLp4Oeoa3QFOk%2BMoIl74y5QHPktGKwaUkR%2FqloHphN0MIJmWl5hQDhTbFFH3TCZLjs%2BjRLUuoTJthRr6brsg7Y50xt71%2F2i9Ppmx3I6RllP%2BoHQGyCHvtPtZXVH4hVYecN0mj8N5sbKUZQX14RUpriShXzkg9%2Fy0PfFse07SloH6itKUrU6xTpp3%2BboTeYVOcHyM8ID3XDDr9KLEBjqkAQb32m131NLsHakRegLaUv2IWtkEKdGSJXasLtxugc%2FDnOom5ClmUxN2fPYmDOIhYEdGlwp%2BdQc7DrE%2BTQXUwzJ%2BWnCminag6Ist0CV08JrMXBWo1JjkxU1e23Jx8FXwrJlbBqrqxuocy4NrkpLQ%2BejrpliDVIeu6QEim%2F3wHkD%2Ba2uDkW8jMy3akbjfUfh7akAu9nW9KiABu2XoGUVHyqHzGS6O&X-Amz-Signature=856f9fb50803cfda638136fbb5cf0635bf9c004a8c38613d0813f7e16cd5eb18&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject" alt="image.png"></p>
+<p>The imitation phase hit predictably. People with moderate influence started getting Revos plus guards - still keeping some link between symbol and function. But economics shifted. Guards got expensive, complicated. The truck stayed affordable.</p>
+<p>Middle-tier guys bought Revos minus the security. Pure theater now. Performance of power for people who can&#39;t tell real capability from borrowed symbols.</p>
+<p>What happened next broke my brain a bit. The simulation started feeding on itself. Market responded by making &quot;civilian&quot; Revos - same look, less defensive capability. We got daala - simulation without original.</p>
+<p>Now we&#39;re in full Baudrillard territory. People buy Revos not because they remember real protection, but because the script says it means strength. Symbol completely divorced from what it supposedly represents.</p>
+<p>But this is unstable. When everyone has access to the symbol, scarcity dies. When the gap between appearance and reality gets obvious, the signal flips. Revo starts broadcasting vulnerability instead of strength.</p>
+<p>We&#39;re hitting that point. In some circles, driving a Revo without clear need is becoming a tell. Marker of trying too hard, mistaking symbols for substance. Daala completing its cycle from strength signal to weakness indicator.</p>
+<p>It&#39;s systems failure in slow motion. All the feedback loops going haywire.</p>
+
+   <div style="margin-top: 40px; color: var(--accent-color);">
+       Last updated: 7/29/2025
+   </div>
+   
+   <script>
+       function toggleTheme() {
+           const current = document.documentElement.getAttribute('data-theme');
+           const next = current === 'dark' ? 'light' : 'dark';
+           document.documentElement.setAttribute('data-theme', next);
+           localStorage.setItem('theme', next);
+       }
+       
+       // Initialize theme
+       const saved = localStorage.getItem('theme');
+       if (saved) {
+           document.documentElement.setAttribute('data-theme', saved);
+       } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+           document.documentElement.setAttribute('data-theme', 'dark');
+       }
+       
+       // Listen for system theme changes
+       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+           if (!localStorage.getItem('theme')) {
+               document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+           }
+       });
+   </script>
+</body>
+</html>
